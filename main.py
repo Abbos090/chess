@@ -11,4 +11,6 @@ def knight_check(x1,y1,x2,y2):
 def minister(x1,y1,x2,y2):
     return  abs(x1-x2) == abs(y1-y2) or x1 == x2 or y1 == y2
 def king_check(x1,y1,x2,y2):
-    return abs(x1-x2) == 1 or abs(y1-y2) == 1
+    ox = abs(x1-x2)
+    oy = abs(y1-y2)
+    return ox + oy <= 2
